@@ -22,13 +22,18 @@ void insertionSort(T d[],int N){
 					d[j-1] = r;
 				}
 				
-				
+			
 			}
 			
 		}
+		cout << "Pass " << i << ":";
+			for (int e = 0; e < N; e++)
+				{
+					cout << d[e] << " ";
+				}
+		cout << "\n";
 		
 	}
-	
 }
 int main(){
 	int a[10] = {12,25,30,44,2,0,4,7,55,25};
