@@ -3,9 +3,33 @@ using namespace std;
 
 template <typename T>
 void insertionSort(T d[],int N){
-
+	
+	for (int i = 1; i < N; i++)
+	{
+		if (d[i] > d[i-1])
+		{
+			
+			T r;
+			r = d[i];
+			d[i] = d[i-1];
+			d[i-1] = r;
+			for (int j = i-1; j > 0; j--)
+			{
+				if (d[j] > d[j-1])
+				{
+					r = d[j];
+					d[j] = d[j-1];
+					d[j-1] = r;
+				}
+				
+				
+			}
+			
+		}
+		
+	}
+	
 }
-
 int main(){
 	int a[10] = {12,25,30,44,2,0,4,7,55,25};
 	cout << "Input Array:";
